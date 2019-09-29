@@ -3,6 +3,7 @@ import LungisaProfile from '../../Resources/LungisaProfile.jpg';
 export class Header extends Component {
 
     render(){
+        //for speech component look into https://www.npmjs.com/package/react-speech
         return(
             <header className="App-header">
                 
