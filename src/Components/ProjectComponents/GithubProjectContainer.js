@@ -26,7 +26,7 @@ export class GithubProjectContainer extends Component {
 
     render() {
         return (
-            <div className="GithubProjectContainer">(
+            <div className="container" id="GithubProjectContainer">
                 <h1>Some Projects I've Done</h1>
                 {this.state.isReady && this.state.githubProjects.map(proj => 
                     <Suspense fallback={<div>Loading Project</div>}><GithubProjectCard projInfo={proj}/></Suspense> 

@@ -73,3 +73,31 @@ header > p, header > h1{
   padding: 10px;
   box-shadow: 5px 10px gray;
 }
+
+
+.projCard{
+  border: 2.5%;
+  margin: 2%;
+  float: right;
+}
+
+.projectLogo{
+  width: 300px;
+  position: center;
+  margin: 0px;
+  box-shadow: 2px 3px grey;
+  border-left: solid black 1px;
+}
+
+.pagesLink > a{
+  color: whitesmoke;
+  text-decoration: none;
+  width: 100%;
+  margin: 0px;
+}
+
+.pagesLink{
+  background-color: #282c34;
+  width: 100%;
+  margin: 0px;
+}
