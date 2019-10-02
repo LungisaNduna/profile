@@ -1,0 +1,4 @@
+this is an 8bit font https://fontlibrary.org/en/font/8bit-wonder great for the headers
+this is a pixel font https://fontlibrary.org/en/font/pixel-operator great for the paragraph text
+
+figure out how to expose functions for external consumption
