@@ -23,6 +23,10 @@
   color: #09d3ac;
 }
 
+header{
+  position: relative;
+}
+
 header > img {
   border-radius: 50%;
   height: 40vmin;
@@ -35,9 +39,9 @@ header > p, header > h1{
 /* this was given by unsplash to give *
  * credit to the content creator.     */
 .photoCredit{
-  float: right;
-  margin-bottom: 2%;
-  margin-right: 2%;
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
 }
 .photoLink{
   background-color:black;
@@ -68,25 +72,54 @@ header > p, header > h1{
   padding:2px 3px;
 }
 
+.container{
+  border-radius: 15px;
+}
+
 #AboutMeDiv{
   border-top : 1px solid;
   padding: 10px;
   box-shadow: 5px 10px gray;
+  background-color: whitesmoke;
 }
 
+#GithubProjContainer{
+  background-color: #2196F3;
+}
 
-.projCard{
-  border: 2.5%;
-  margin: 2%;
-  float: right;
+#GithubProjSection{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 4%;
+  row-gap: 10px;
+  padding: 10px;
+}
+
+.projCardContainer{
+  position: relative;
 }
 
 .projectLogo{
-  width: 300px;
+  width: 100%;
   position: center;
   margin: 0px;
   box-shadow: 2px 3px grey;
   border-left: solid black 1px;
+}
+
+.languages {
+  color: whitesmoke;
+  position: absolute;
+  bottom: -5px;
+  right: 8px;
+  display: inline;
+}
+
+.language{
+  background-color: black;
+  border-radius: 8px;
+  font-size: 3vh;
+  padding: 4px;
 }
 
 .pagesLink > a{
@@ -97,7 +130,21 @@ header > p, header > h1{
 }
 
 .pagesLink{
-  background-color: #282c34;
-  width: 100%;
-  margin: 0px;
+  border-radius: 0px 0px 8px 8px;
+  padding: 4px;
+  color: whitesmoke;
+  font-size: 4vh;
+  background-color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  #GithubProjSection{
+    grid-template-columns: 45% 45%;
+    column-gap: 5%;
+    row-gap: 8%;
+    padding: 10px;
+  }
+  .pagesLink{
+    font-size: 3vh;
+  }
 }

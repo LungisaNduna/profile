@@ -2,19 +2,26 @@ import $ from 'jquery';
 
 export default class ProjectRepository{
     constructor(githubRepoData){
-        this.projects = this.getProjectsFromGithubAPI(githubRepoData);
+        this.projects = this.formatRawData(githubRepoData);
     }
 
-    getProjectsFromGithubAPI = (githubRepoData) => {
+    formatRawData = (githubRepoData) => {
         let allRepos = [];
         githubRepoData.forEach(repo => {
             repo['logoSourceUrl'] = this.getLogoSource(repo.name);
             if (repo.has_pages) {
                 repo["pagesLink"] = this.getPagesLink(repo.name);
             }
-            allRepos.push(repo);
+            repo.language = (repo.language === "JavaScript") ? ['JS'] : [repo.language];
+            allRepos.push(this.specialConciderations(repo));
         });
         return allRepos;
+    }
+
+    specialConciderations = (repoData) => {
+        if (repoData.name === "digital-cards") { repoData.language = ["HTML"];}
+        if (repoData.name === "profile") { repoData.language.push("React"); repoData.has_pages = false; }
+        return repoData;
     }
 
     /* Need to resolve this issue

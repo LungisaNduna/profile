@@ -6,10 +6,14 @@ export class GithubProjectCard extends Component {
         const { projInfo } = this.props;
         return (
             <div className="projCard">
-                <a href={projInfo.html_url} target="_blank">
+                <a className="projCardContainer" href={projInfo.html_url} target="_blank">
                     <img className="projectLogo" src={projInfo.logoSourceUrl}/>
+                    <div className="languages">
+                        {projInfo.language.map(language => <p className="language">{language}</p>) }
+                    </div>
+                    {projInfo.has_pages && <div className="pagesLink"><a target="_blank" href={projInfo.liveLink}>Check out the webpage</a></div>}
                 </a>
-                {projInfo.has_pages && <div className="pagesLink"><a target="_blank" href={projInfo.liveLink}>Check out the webpage</a></div>}
+                
             </div>
         )
     }
