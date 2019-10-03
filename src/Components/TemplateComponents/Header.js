@@ -20,7 +20,7 @@ export class Header extends Component {
                                 <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
                             </svg>
                         </span>
-                        <span className="photoLink_span2">Background Image by Louis Reed</span>
+                        <span className="photoLink_span2">photo by Louis Reed</span>
                     </a>
                 </div>
             </header>

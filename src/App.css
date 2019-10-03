@@ -72,19 +72,30 @@ header > p, header > h1{
   padding:2px 3px;
 }
 
-.container{
-  border-radius: 15px;
+h1{
+  background-color: rgba(0,0,0,0.2);
 }
 
-#AboutMeDiv{
+.container{
+  border-radius: 15px;
   border-top : 1px solid;
   padding: 10px;
   box-shadow: 5px 10px gray;
   background-color: whitesmoke;
+  margin-bottom: 15px;
 }
 
 #GithubProjContainer{
-  background-color: #2196F3;
+  position: relative;
+  background-image: url("./Resources/prof_proj_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#GithubProjContainer > h1{
+  text-shadow: 2px 2px black;
+  color: whitesmoke;
 }
 
 #GithubProjSection{
