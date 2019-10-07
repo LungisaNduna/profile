@@ -14,6 +14,7 @@ export class App extends Component {
       gitDisplayReady : false,
       ghProjRepository : null,
     }
+    document.title = "Lungisa Nduna"
   }
 
   componentDidMount(){
@@ -33,7 +34,9 @@ export class App extends Component {
       <div className="App">
         <Header />
         <AboutMe/>
-        { this.state.gitDisplayReady && <GithubProjectContainer githubProjects={ghProjRepository.returnHighlightProjectList(highlightGHProjects)} />}
+        { this.state.gitDisplayReady && 
+          <GithubProjectContainer githubProjects={ghProjRepository.returnHighlightProjectList(highlightGHProjects)} />
+        }
       </div>
     )
   }

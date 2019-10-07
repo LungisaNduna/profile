@@ -1,8 +1,7 @@
 [
-  {
+  { "name": "birthday-cards",
     "id": 160645793,
     "node_id": "MDEwOlJlcG9zaXRvcnkxNjA2NDU3OTM=",
-    "name": "birthday-cards",
     "full_name": "LungisaNduna/birthday-cards",
     "private": false,
     "owner": {
@@ -93,10 +92,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "camagru",
     "id": 154663731,
     "node_id": "MDEwOlJlcG9zaXRvcnkxNTQ2NjM3MzE=",
-    "name": "camagru",
     "full_name": "LungisaNduna/camagru",
     "private": false,
     "owner": {
@@ -187,10 +185,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "filler",
     "id": 154665803,
     "node_id": "MDEwOlJlcG9zaXRvcnkxNTQ2NjU4MDM=",
-    "name": "filler",
     "full_name": "LungisaNduna/filler",
     "private": false,
     "owner": {
@@ -281,10 +278,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "getnextline",
     "id": 136303467,
     "node_id": "MDEwOlJlcG9zaXRvcnkxMzYzMDM0Njc=",
-    "name": "getnextline",
     "full_name": "LungisaNduna/getnextline",
     "private": false,
     "owner": {
@@ -375,10 +371,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "lem-in",
     "id": 136297849,
     "node_id": "MDEwOlJlcG9zaXRvcnkxMzYyOTc4NDk=",
-    "name": "lem-in",
     "full_name": "LungisaNduna/lem-in",
     "private": false,
     "owner": {
@@ -469,10 +464,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "libft",
     "id": 136302783,
     "node_id": "MDEwOlJlcG9zaXRvcnkxMzYzMDI3ODM=",
-    "name": "libft",
     "full_name": "LungisaNduna/libft",
     "private": false,
     "owner": {
@@ -563,10 +557,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "matcha",
     "id": 165833587,
     "node_id": "MDEwOlJlcG9zaXRvcnkxNjU4MzM1ODc=",
-    "name": "matcha",
     "full_name": "LungisaNduna/matcha",
     "private": false,
     "owner": {
@@ -657,10 +650,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "mycv",
     "id": 209755858,
     "node_id": "MDEwOlJlcG9zaXRvcnkyMDk3NTU4NTg=",
-    "name": "mycv",
     "full_name": "LungisaNduna/mycv",
     "private": false,
     "owner": {
@@ -751,10 +743,9 @@
     "watchers": 1,
     "default_branch": "master"
   },
-  {
+  { "name": "office-ui-fabric-react",
     "id": 191380160,
     "node_id": "MDEwOlJlcG9zaXRvcnkxOTEzODAxNjA=",
-    "name": "office-ui-fabric-react",
     "full_name": "LungisaNduna/office-ui-fabric-react",
     "private": false,
     "owner": {
@@ -851,10 +842,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "profile",
     "id": 211662011,
     "node_id": "MDEwOlJlcG9zaXRvcnkyMTE2NjIwMTE=",
-    "name": "profile",
     "full_name": "LungisaNduna/profile",
     "private": false,
     "owner": {
@@ -945,10 +935,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "push_swap",
     "id": 154667960,
     "node_id": "MDEwOlJlcG9zaXRvcnkxNTQ2Njc5NjA=",
-    "name": "push_swap",
     "full_name": "LungisaNduna/push_swap",
     "private": false,
     "owner": {
@@ -1039,10 +1028,9 @@
     "watchers": 0,
     "default_branch": "master"
   },
-  {
+  { "name": "UnityFundementals",
     "id": 211107109,
     "node_id": "MDEwOlJlcG9zaXRvcnkyMTExMDcxMDk=",
-    "name": "UnityFundementals",
     "full_name": "LungisaNduna/UnityFundementals",
     "private": false,
     "owner": {

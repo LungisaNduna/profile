@@ -10,7 +10,7 @@ export default class ProjectRepository{
         githubRepoData.forEach(repo => {
             repo['logoSourceUrl'] = this.getLogoSource(repo.name);
             if (repo.has_pages) {
-                repo["pagesLink"] = this.getPagesLink(repo.name);
+                repo["liveLink"] = this.getPagesLink(repo.name);
             }
             repo.language = (repo.language === "JavaScript") ? ['JS'] : [repo.language];
             allRepos.push(this.specialConciderations(repo));
@@ -42,7 +42,7 @@ export default class ProjectRepository{
 
 
     getPagesLink = (projName) => {
-        return `lungisanduna/github.io/${projName}/`;
+        return `https://lungisanduna/github.io/${projName}/`;
     }
 
     filterHighlightProjects = (highlightedProjectNames) =>{

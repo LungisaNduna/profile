@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import GithubProjectContainer from '../../Components/ProjectComponents/GithubProjectContainer'
 
 it('renders without crashing', () => {
@@ -16,7 +16,7 @@ describe('The GithubProjectContainer', () => {
 
     describe('When API pull succeeds', () => {
         
-        beforeEach(() => {
+        beforeAll(() => {
             //mock a list of projects to work with
             projectList = [];
             projectList.push({
@@ -69,7 +69,8 @@ describe('The GithubProjectContainer', () => {
         });
 
         test('should display a list of projects equal to those pulled', () => {
-            expect(container.find("projCard").length).toBe(projectList.length);
+
+            setTimeout(() => expect(container.find('.projCard').length).toBe(projectList.length), 1000);
         })
         
     });

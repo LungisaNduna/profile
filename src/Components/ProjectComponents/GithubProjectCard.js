@@ -4,6 +4,8 @@ export class GithubProjectCard extends Component {
 
     render() {
         const { projInfo } = this.props;
+        console.log("making the projCard for "+projInfo.name);
+        if (projInfo.has_pages) { console.log(projInfo.pagesLink); }
         return (
             <div className="projCard">
                 <a className="projCardContainer" href={projInfo.html_url} target="_blank">
@@ -11,9 +13,12 @@ export class GithubProjectCard extends Component {
                     <div className="languages">
                         {projInfo.language.map(language => <p className="language">{language}</p>) }
                     </div>
-                    {projInfo.has_pages && <div className="pagesLink"><a target="_blank" href={projInfo.liveLink}>Check out the webpage</a></div>}
                 </a>
-                
+                {projInfo.has_pages && 
+                    <div className="pagesLink">
+                        <a href={projInfo.liveLink} target="_blank">Check out the webpage</a>
+                    </div>
+                }                
             </div>
         )
     }
