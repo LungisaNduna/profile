@@ -4,7 +4,6 @@ export class GithubProjectCard extends Component {
 
     render() {
         const { projInfo } = this.props;
-        console.log("making the projCard for "+projInfo.name);
         if (projInfo.has_pages) { console.log(projInfo.pagesLink); }
         return (
             <div className="projCard">

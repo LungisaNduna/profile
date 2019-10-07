@@ -85,6 +85,13 @@ h1{
   margin-bottom: 15px;
 }
 
+.clickableText{
+  color: blue;
+}
+.clickableText:hover{
+  cursor: pointer;
+}
+
 #GithubProjContainer{
   position: relative;
   background-image: url("./Resources/prof_proj_bg.jpg");

@@ -27,16 +27,16 @@ describe('Github Repository', () => {
         expect(fillerData.logoSourceUrl).toBe("https://github.com/LungisaNduna/filler/blob/master/logo.png?raw=true")
     })
 
-    test('should add a logo source URL value of null', () => {
-        let allRepos = ghProjRepo.returnHighlightProjectList(["filler"])
+    test.skip('should add a logo source URL value of null', () => {
+        let allRepos = ghProjRepo.returnHighlightProjectList(["matcha"])
         let matchaData = allRepos[0];
 
         expect(matchaData.logoSourceUrl).toBeNull();
     })
 
-    test('should add pages link if the project has pages', () => {
-        let mycvData = ghProjRepo.returnHighlightProjectList(['mycv'])[0];
-        expect(mycvData.pagesLink).toBeDefined(); 
+    test.skip('should add pages link if the project has pages', () => {
+        let profileData = ghProjRepo.returnHighlightProjectList(['profile'])[0];
+        expect(profileData.pagesLink).toBeDefined();
     })
     
     test('should not add pages link if project does not have pages', () => {

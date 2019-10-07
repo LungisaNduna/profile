@@ -5,7 +5,6 @@ import UnsplashLink from '../smallComponents/UnsplashLink';
 export class GithubProjectContainer extends Component {
     constructor(props){
         super(props);
-        console.log("making the container");
     }
 
     render() {
