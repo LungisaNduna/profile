@@ -5,7 +5,7 @@ import GithubProjectContainer from '../../Components/ProjectComponents/GithubPro
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<GithubProjectContainer />, div);
+  ReactDOM.render(<GithubProjectContainer githubProjects={[]} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
@@ -65,11 +65,11 @@ describe('The GithubProjectContainer', () => {
                 has_pages: false,
             });
             //create the container we will work with
-            container = shallow(<GithubProjectContainer projects={projectList}/>);
+            container = shallow(<GithubProjectContainer githubProjects={projectList}/>);
         });
 
         test('should display a list of projects equal to those pulled', () => {
-            expect(container.find("ProjectDiv").length).toBe(projectList.length);
+            expect(container.find("projCard").length).toBe(projectList.length);
         })
         
     });
@@ -77,13 +77,13 @@ describe('The GithubProjectContainer', () => {
     describe('When no projects exist', () => {
         //this seems like an unnecessary test
         beforeEach(() => {
-            container = shallow(<GithubProjectContainer projects={null}/>);
+            container = shallow(<GithubProjectContainer githubProjects={null}/>);
         });
     });
 
     describe('When API pull fails', () => {
         beforeEach(() => {
-            container = shallow(<GithubProjectContainer projects={null}/>);
+            container = shallow(<GithubProjectContainer githubProjects={null}/>);
         });
     });
 })
