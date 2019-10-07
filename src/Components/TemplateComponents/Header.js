@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import LungisaProfile from '../../Resources/LungisaProfile.jpg';
+import UnsplashLink from '../smallComponents/UnsplashLink';
 export class Header extends Component {
 
     render(){
@@ -13,15 +14,7 @@ export class Header extends Component {
 
                 {/* a link to the creator of the image which is free for use */}
                 <div className="photoCredit">
-                    <a className="photoLink" href="https://unsplash.com/@_louisreed?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Louis Reed">
-                        <span className="photoLink_span1">
-                            <svg className="photoLink_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                <title>unsplash-logo</title>
-                                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-                            </svg>
-                        </span>
-                        <span className="photoLink_span2">photo by Louis Reed</span>
-                    </a>
+                    <UnsplashLink linkAddress="https://unsplash.com/@_louisreed?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge" Artist="Louis Reed" />
                 </div>
             </header>
         );
