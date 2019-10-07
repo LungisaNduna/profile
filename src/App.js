@@ -42,18 +42,17 @@ export class App extends Component {
         
         <Header />
         
-        <AboutMe openModal={this.toggleModal} />
+        <AboutMe openModal={this.toggleModal} /> 
         
         { this.state.gitDisplayReady && 
           <GithubProjectContainer 
             githubProjects={ghProjRepository.returnHighlightProjectList(highlightGHProjects)}
           />
         }
-        
+
         <ImageModal 
           show={this.state.showImageModal}
           onClose={this.toggleModal}
-          imageUrl={image}
         />
       
       </div>
