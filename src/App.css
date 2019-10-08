@@ -157,7 +157,7 @@ h1{
 
 .modal{
   width: 90%;
-  height: 90%;
+  height: 95%;
 }
 
 #growthPlan {
@@ -167,6 +167,17 @@ h1{
 
 .ImageSpaceError{
   display: none;
+}
+
+.StyleSwitchDiv{
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  vertical-align: middle;
+}
+
+.CreditIcon{
+  height: 20px;
 }
 
 @media screen and (max-width: 1000px) {
