@@ -26,13 +26,13 @@ export class ImageModal extends Component {
       backgroundColor: '#fff',
       borderRadius: 5,
       margin: '0 auto',
-      padding: 30
+      padding: 20
     };
 
     return (
       <div className="backdrop" style={backdropStyle}>
         <div className="modal" style={modalStyle}>
-         
+          <h1 style={{marginTop: '0px'}}>Growth Plan</h1>
           <img id="growthPlan" src={GrowthPlan} alt="my personal growth plan"/>
           <span className="ImageSpaceError">The Picture resolution of the image will not work for this screen size</span>
 
