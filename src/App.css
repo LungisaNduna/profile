@@ -156,13 +156,17 @@ h1{
 }
 
 .modal{
-  width: 70%;
+  width: 90%;
   height: 90%;
 }
 
 #growthPlan {
   height: 90%;
   max-width: 100%;
+}
+
+.ImageSpaceError{
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -174,5 +178,23 @@ h1{
   }
   .pagesLink{
     font-size: 3vh;
+  }
+
+  #growthPlan {
+    display: none;
+  }
+  
+  .ImageSpaceError{
+    display: block;
+    background-color: rgba(255, 50, 50, 0.2);
+    border: solid 2px red;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .modal{
+    height: auto;
+    width: auto;
   }
 }

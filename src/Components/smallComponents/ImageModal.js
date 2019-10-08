@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import GrowthPlan from '../../Resources/CareerPlan.png'
 
 export class ImageModal extends Component {
+
   render() {
     // Render nothing if the "show" prop is false
     if(!this.props.show) {
@@ -33,6 +34,7 @@ export class ImageModal extends Component {
         <div className="modal" style={modalStyle}>
          
           <img id="growthPlan" src={GrowthPlan} alt="my personal growth plan"/>
+          <span className="ImageSpaceError">The Picture resolution of the image will not work for this screen size</span>
 
           <div className="footer">
             <button onClick={this.props.onClose}>
