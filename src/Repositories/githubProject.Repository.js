@@ -42,7 +42,7 @@ export default class ProjectRepository{
 
 
     getPagesLink = (projName) => {
-        return `https://lungisanduna/github.io/${projName}/`;
+        return `https://lungisanduna.github.io/${projName}/`;
     }
 
     filterHighlightProjects = (highlightedProjectNames) =>{
